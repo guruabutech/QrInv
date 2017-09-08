@@ -86,7 +86,7 @@ public class MainActivity extends Activity implements ZXingScannerView.ResultHan
         cameraActivated = false;
 
         selectTextButton();
-
+    //Esto es una prueba
 
     }
 
