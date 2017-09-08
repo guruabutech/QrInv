@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/black">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:gravity="top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/unnamed" />
+
+    <Button
+        android:id="@+id/qrscan_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:onClick="launchQRScanner"
+        android:background="@drawable/button_selector"
+        android:text="@string/scan_only_qr_codes" />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:onClick="resetProcess"
+        android:background="@drawable/button_selector"
+        android:text="@string/button_reset"/>
+
+    <Button
+        android:id="@+id/dreturn_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="bottom"
+        android:textSize="20sp"
+        android:onClick="deviceReturned"
+        android:background="@drawable/button_selector"
+        android:text="@string/dreturn"/>
+
+
+</LinearLayout>
+
